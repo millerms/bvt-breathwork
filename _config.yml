@@ -3,8 +3,8 @@ remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 minimal_mistakes_skin: "dark"
 
 # Site settings
-title: "Template"
-description: "Temp."
+title: "BVT Breathwork"
+description: "Site for Jason's company, BVT Breathwork"
 url: ""
 baseurl: ""
 locale: en-US
