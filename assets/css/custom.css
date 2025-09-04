@@ -202,9 +202,12 @@ html[data-theme="dark"]  .footer-nav a { color: #e9edf5; }
   .theme-toggle .theme-toggle__switch { --t-w: 45px; --t-h: 24px; }
   .theme-toggle .theme-toggle__switch::after { width: 20px; height: 20px; top: 2px; left: 2px; }
   /* Push icons to extreme edges so the knob doesn't cover them */
-  .theme-toggle .theme-toggle__switch::before { width: 14px; height: 14px; right: 4px; left: auto; }
-  .theme-toggle input[type="checkbox"][role="switch"]:checked + .theme-toggle__switch::before { left: 4px; right: auto; }
+  .theme-toggle .theme-toggle__switch::before { width: 14px; height: 14px; right: 4.5px; left: auto; }
+  .theme-toggle input[type="checkbox"][role="switch"]:checked + .theme-toggle__switch::before { left: 3.5px; right: auto; }
   .theme-toggle input[type="checkbox"][role="switch"]:checked + .theme-toggle__switch::after { transform: translateX(21px); }
+
+  /* Footer nav: reduce link font size by ~2px on mobile */
+  .footer-nav a { font-size: calc(1em - 2px); }
 }
 
 /* Center zen buttons on home feature row */
