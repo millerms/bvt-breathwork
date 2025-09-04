@@ -1,9 +1,9 @@
 ---
-title: "Breathwork for performance and calm"
+title: "BVT Breathwork"
 permalink: /
 layout: splash
 description: "Evidence-based breathwork. Titrate intensity. Build resilience."
-tagline: "Practical, trauma‑informed coaching rooted in research."
+tagline: "Breathwork for performance and calm. Practical, trauma‑informed coaching rooted in research."
 header:
   overlay_color: "#0b1526"
 intro:
