@@ -5,7 +5,7 @@ description: "Selected research that informs this practice."
 layout: splash
 tagline: "Selected research guiding practice design."
 header:
-  overlay_color: "#0b1526"
+  overlay_color: "#073f18ff"
 ---
 
 Below is a selection of key references that inform how I shine a light on breathwork—leaning on systematic reviews, randomized trials, and consensus statements wherever I can. Evidence varies, so treat each with curiosity and caution.

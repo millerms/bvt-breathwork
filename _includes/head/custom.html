@@ -1,5 +1,45 @@
 <!-- start custom head snippets -->
 
+<!-- Theme toggle loader: inserts dark skin and applies saved/system preference -->
+<script>
+  (function () {
+    try {
+      var stored = localStorage.getItem('theme');
+      // Default to light on first load; only use stored preference if present
+      var theme = stored || 'light';
+
+      var head = document.head;
+      var light = document.querySelector('link[rel="stylesheet"][href$="/assets/css/main.css"]');
+      var dark = document.querySelector('link[data-skin="dark"]');
+
+      if (!dark) {
+        dark = document.createElement('link');
+        dark.rel = 'stylesheet';
+        dark.href = '{{ "/assets/css/skin-dark.css" | relative_url }}';
+        dark.setAttribute('data-skin', 'dark');
+        dark.media = 'not all';
+        head.appendChild(dark);
+      }
+
+      function apply(t) {
+        if (light) light.media = (t === 'dark') ? 'not all' : 'all';
+        if (dark) dark.media = (t === 'dark') ? 'all' : 'not all';
+        document.documentElement.dataset.theme = t;
+      }
+
+      apply(theme);
+
+      window.toggleTheme = function () {
+        var next = (document.documentElement.dataset.theme === 'dark') ? 'light' : 'dark';
+        localStorage.setItem('theme', next);
+        apply(next);
+      };
+    } catch (e) {
+      // no-op
+    }
+  })();
+  </script>
+
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->

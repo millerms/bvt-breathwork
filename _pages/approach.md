@@ -6,7 +6,7 @@ toc: true
 layout: splash
 tagline: "Simple skills. Safety, agency, and evidence notes."
 header:
-  overlay_color: "#0b1526"
+  overlay_color: "#0c102ca5"
 ---
 
 This practice brings together simple, easy-to-learn breathing skills with a strong focus on your comfort and control. I keep my claims realistic, share what the research says, and always encourage you to listen to your body—slow down or take a break whenever you need.

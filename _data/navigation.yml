@@ -11,6 +11,6 @@ main:
     url: /references/
   - title: "Contact"
     url: /contact/
-  - title: "<i class='fab fa-instagram' aria-hidden='true'></i> <span class='visually-hidden'>Instagram</span>"
+  - title: "<i class='fab fa-instagram' aria-hidden='true'></i> <span class='visually-hidden'>Instagram</span> Instagram"
     url: https://www.instagram.com/bvtbreathwork/
     target: _blank

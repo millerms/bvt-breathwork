@@ -5,7 +5,7 @@ description: "Jason Fitzgerald. Exercise physiologist and breathwork instructor.
 layout: splash
 tagline: "Exercise physiologist. Breathwork instructor. Evidence‑aware."
 header:
-  overlay_color: "#0b1526"
+  overlay_color: "#073f18ff"
 ---
 
 I’m Jason Fitzgerald, an exercise physiologist and breathwork instructor trained with Oxygen Advantage and Nordic Flow. I hold certifications in FMS, NFPT CPT, and as a Nordic Flow cold plunge instructor.

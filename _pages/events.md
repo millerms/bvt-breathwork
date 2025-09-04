@@ -6,7 +6,7 @@ collection: events
 description: "Workshops, classes, and series."
 tagline: "Practice together. Learn, rest, and recover."
 header:
-  overlay_color: "#0b1526"
+  overlay_color: "#073f18ff"
 ---
 
 I warmly invite you to join upcoming events, where each class and workshop is

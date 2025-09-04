@@ -5,7 +5,7 @@ description: "Get in touch about sessions, workshops, or questions."
 layout: splash
 tagline: "Reach out with questions or ideas."
 header:
-  overlay_color: "#0b1526"
+  overlay_color: "#073f18ff"
 ---
 
 I’d love to hear from you! Whether you have questions, want to book a private session, or are interested in workshops, feel free to reach out.

@@ -5,7 +5,7 @@ layout: splash
 description: "Evidence-based breathwork. Titrate intensity. Build resilience."
 tagline: "Breathwork for performance and calm. Practical, trauma‑informed coaching rooted in research."
 header:
-  overlay_color: "#0b1526"
+  overlay_color: "#073f188e"
 intro:
   - excerpt: "Evidence-based breathwork. Titrate intensity, build resilience, improve recovery."
 feature_row:
