@@ -5,8 +5,8 @@ minimal_mistakes_skin: "air"
 # Site settings
 title: "BVT Breathwork"
 description: "Site for Jason's company, BVT Breathwork"
-url: "https://millerms.github.io/bvt-breathwork/"
-baseurl: ""
+url: "https://millerms.github.io"
+baseurl: "/bvt-breathwork"
 locale: en-US
 og_image: 
 logo: 
