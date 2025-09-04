@@ -1,0 +1,14 @@
+[project]
+name = "bvt-breathwork Minimal Mistakes Jekyll Site"
+description = "Configuration for Codex tailored to the bvt-breathwork Minimal Mistakes Jekyll site project."
+
+[agent]
+guidance_file = "AGENT.md"
+default_tone = "professional"
+formatting = { line_length = 80, indent_style = "spaces", indent_size = 2 }
+preferred_language = "markdown"
+
+[commits]
+conventional_style = true
+prefixes = ["feat", "fix", "chore", "docs"]
+message_format = "<prefix>: <subject>"
