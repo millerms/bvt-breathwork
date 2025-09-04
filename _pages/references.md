@@ -8,7 +8,7 @@ header:
   overlay_color: "#0b1526"
 ---
 
-Below is a selection of key references that inform how we shine a light on breathwork—leaning on systematic reviews, randomized trials, and consensus statements wherever we can. Evidence varies, so treat each with curiosity and caution.
+Below is a selection of key references that inform how I shine a light on breathwork—leaning on systematic reviews, randomized trials, and consensus statements wherever I can. Evidence varies, so treat each with curiosity and caution.
 
 1. Bentley TGK, et al. [Breathing Practices for Stress and Anxiety Reduction: Conceptual Framework of Implementation Guidelines Based on a Systematic Review (2023)](https://pubmed.ncbi.nlm.nih.gov/38137060/). PMID: 38137060.
 
@@ -36,5 +36,5 @@ Below is a selection of key references that inform how we shine a light on breat
 
 ## Notes
 
-- Citations are here for transparency, not endorsement. We use neutral language in coaching.
-- Some evidence is emerging or mixed. When in doubt, we encourage gentle, optional learning—with opt-outs always on the table.
+- Citations are here for transparency, not endorsement. I use neutral language in coaching.
+- Some evidence is emerging or mixed. When in doubt, I encourage gentle, optional learning—with opt-outs always on the table.

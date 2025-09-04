@@ -15,7 +15,7 @@ feature_row:
     btn_label: "Read the bio"
     btn_class: "zen-button"
   - title: "Approach"
-    excerpt: "How we work. Nasal‑dominant breathing, CO₂ tolerance (Buteyko‑inspired), controlled cyclic breathing with breath holds, and IHHT‑style concepts. Safety, opt‑outs, and evidence notes."
+    excerpt: "How I work. Nasal‑dominant breathing, CO₂ tolerance (Buteyko‑inspired), controlled cyclic breathing with breath holds, and IHHT‑style concepts. Safety, opt‑outs, and evidence notes."
     url: "/approach/"
     btn_label: "See the approach"
     btn_class: "zen-button"
@@ -25,7 +25,7 @@ feature_row:
     btn_label: "View upcoming events"
     btn_class: "zen-button"
   - title: "References"
-    excerpt: "Explore selected research and sources that guide our practice, offering transparency about the evidence behind our methods."
+    excerpt: "Explore selected research and sources that guide my practice, offering transparency about the evidence behind my methods."
     url: "/references/"
     btn_label: "View references"
     btn_class: "zen-button"
@@ -40,7 +40,7 @@ Welcome. This practice emphasizes simple, coachable breathing skills that
 support calm, focus, and recovery. Sessions are paced to your comfort with
 clear opt‑outs and intensity options.
 
-We keep claims modest and name the quality of evidence. If a practice is new or
-the literature is mixed, we’ll say so and adjust the intensity to fit you.
+I keep claims modest and name the quality of evidence. If a practice is new or
+the literature is mixed, I’ll say so and adjust the intensity to fit you.
 
 {% include feature_row %}

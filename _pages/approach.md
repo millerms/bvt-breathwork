@@ -9,7 +9,7 @@ header:
   overlay_color: "#0b1526"
 ---
 
-This practice brings together simple, easy-to-learn breathing skills with a strong focus on your comfort and control. We keep our claims realistic, share what the research says, and always encourage you to listen to your body—slow down or take a break whenever you need.
+This practice brings together simple, easy-to-learn breathing skills with a strong focus on your comfort and control. I keep my claims realistic, share what the research says, and always encourage you to listen to your body—slow down or take a break whenever you need.
 
 ## Pillars
 
@@ -31,7 +31,7 @@ This practice brings together simple, easy-to-learn breathing skills with a stro
 
 ### Controlled cyclic breathing with breath holds
 - Why: To support managing your energy and recovery, which can boost focus and resilience.
-- How: Breathing patterns with deeper breaths and holds after exhaling, all taught with clear safety guidelines and options to pause. We keep things simple and neutral, avoiding any hype.
+- How: Breathing patterns with deeper breaths and holds after exhaling, all taught with clear safety guidelines and options to pause. I keep things simple and neutral, avoiding any hype.
 
 > Evidence notes: A 1‑month RCT suggests cyclic sighing with prolonged exhalation
 > improves mood and lowers respiratory rate vs other practices. Broader physio
@@ -39,7 +39,7 @@ This practice brings together simple, easy-to-learn breathing skills with a stro
 > representative sources. Avoid over‑generalizing beyond measured endpoints.
 
 ### IHHT‑style concepts (intermittent hypoxia/hypercapnia)
-- Why: Carefully guided exposure may help build tolerance and awareness. We only teach this gently, at an introductory level.
+- Why: Carefully guided exposure may help build tolerance and awareness. I only teach this gently, at an introductory level.
 - How: Short, coached breath holds with plenty of gentle recovery breathing. Comfort, clarity, and screening are top priorities.
 
 > Evidence notes: Emerging and heterogeneous. Use cautious language. More
@@ -48,13 +48,13 @@ This practice brings together simple, easy-to-learn breathing skills with a stro
 
 ## Safety and trauma‑informed choices
 - Your choice: You decide the pace, how intense it feels, and whether you sit or lie down.
-- Start easy: We begin gently and only increase intensity if it feels right for you.
+- Start easy: I begin gently and only increase intensity if it feels right for you.
 - Take breaks anytime: You’re welcome to pause or switch to easy nasal breathing whenever you want.
 - Stop if needed: If you feel dizzy, uncomfortable, or unwell, just return to easy breathing and rest.
 - Keep in mind: If you have heart or lung conditions, are pregnant, have a history of seizures, or other health concerns, please take extra care and seek medical advice.
 
 ## What a session feels like
-- A quick check-in to start. Gentle nasal breathing to settle in. Then we move into skills that fit your goals.
+- A quick check-in to start. Gentle nasal breathing to settle in. Then I move into skills that fit your goals.
 - Short practice segments with plenty of time to rest and recover between.
 - A clear wrap-up with options to take what you’ve learned home with you.
 
