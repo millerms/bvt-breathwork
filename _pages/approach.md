@@ -59,5 +59,5 @@ This practice brings together simple, easy-to-learn breathing skills with a stro
 - A clear wrap-up with options to take what you’ve learned home with you.
 
 ## References
-See the [References](/references/) page for representative sources that inform
-this approach.
+See the [References]({{ '/references/' | relative_url }}) page for representative
+sources that inform this approach.

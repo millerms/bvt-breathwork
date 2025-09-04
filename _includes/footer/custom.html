@@ -1,6 +1,21 @@
 <!-- Custom footer insert intentionally left minimal.
      Instagram now provided via site.footer.links so it appears after the Follow: label. -->
-<div class="theme-toggle" style="margin: 0.5rem 0 0;" role="group" aria-label="Theme">
+<nav class="footer-nav" aria-label="Footer navigation">
+  {% assign items = site.data.navigation.main %}
+  {% assign count = 0 %}
+  {% for item in items %}
+    {% if item.url and item.url contains 'http' %}
+      {% continue %}
+    {% endif %}
+    {% if item.url %}
+      {% if count > 0 %}<span class="sep">|</span>{% endif %}
+      <a href="{{ item.url | relative_url }}">{{ item.title | strip_html }}</a>
+      {% assign count = count | plus: 1 %}
+    {% endif %}
+  {% endfor %}
+</nav>
+
+<div class="theme-toggle" style="margin: 0.25rem 0 0;" role="group" aria-label="Theme">
   <span class="theme-toggle__label theme-toggle__label--light" aria-hidden="true">Light</span>
   <input type="checkbox" id="theme-toggle" role="switch" aria-label="Toggle dark mode">
   <label class="theme-toggle__switch" for="theme-toggle">
