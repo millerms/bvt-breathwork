@@ -18,33 +18,32 @@ This practice brings together simple, easy-to-learn breathing skills with a stro
 - How: Gentle breathing through your nose, often at a relaxed pace close to 6 breaths per minute.
 
 > Evidence notes: Multiple RCTs and systematic reviews suggest slow breathing
-> improves HRV and baroreflex function and reduces state anxiety. See the
+> can support HRV, baroreflex function, and state anxiety. See the
 > References page for representative sources.
 
 ### CO₂ tolerance work (Buteyko‑inspired)
 - Why: To get comfortable with mild rises in CO₂, which can help reduce over‑breathing and give you more control.
 - How: Light to moderate nasal breathing paired with short, easy breath holds.
 
-> Evidence notes: Mixed‑to‑moderate evidence depending on outcome. Some positive
-> data in asthma cohorts. For healthy adults, findings vary and protocols differ
-> across studies. See the References page for representative sources.
+> Evidence notes: Positive findings have been observed in asthma cohorts, and
+> research in healthy adults is still emerging as protocols and outcomes are
+> explored.
 
 ### Controlled cyclic breathing with breath holds
 - Why: To support managing your energy and recovery, which can boost focus and resilience.
 - How: Breathing patterns with deeper breaths and holds after exhaling, all taught with clear safety guidelines and options to pause. I keep things simple and neutral, avoiding any hype.
 
-> Evidence notes: A 1‑month RCT suggests cyclic sighing with prolonged exhalation
-> improves mood and lowers respiratory rate vs other practices. Broader physio
-> outcomes show mixed results across short studies. See the References page for
-> representative sources. Avoid over‑generalizing beyond measured endpoints.
+> Evidence notes: A 1‑month RCT found cyclic sighing with prolonged exhalation
+> improved mood and lowered respiratory rate compared to other practices.
+> Other physiological outcomes are still being explored in short-term studies.
 
 ### IHHT‑style concepts (intermittent hypoxia/hypercapnia)
 - Why: Carefully guided exposure may help build tolerance and awareness. I only teach this gently, at an introductory level.
 - How: Short, coached breath holds with plenty of gentle recovery breathing. Comfort, clarity, and screening are top priorities.
 
-> Evidence notes: Emerging and heterogeneous. Use cautious language. More
-> high‑quality trials are needed to define benefits and risks in healthy adults
-> and specific populations. See the References page for scope and limitations.
+> Evidence notes: Evidence for these concepts is emerging, with promising early
+> findings. Ongoing research continues to explore benefits and safety in healthy
+> adults and specific populations. 
 
 ## Safety and trauma‑informed choices
 - Your choice: You decide the pace, how intense it feels, and whether you sit or lie down.
