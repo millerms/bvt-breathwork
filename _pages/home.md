@@ -2,10 +2,11 @@
 title: "BVT Breathwork"
 permalink: /
 layout: splash
+classes: [wide, home-zen-center]
 description: "Evidence-based breathwork. Titrate intensity. Build resilience."
 tagline: "Breathwork for performance and calm. Practical, trauma‑informed coaching rooted in research."
 header:
-  overlay_color: "#073f188e"
+  overlay_color: "#073f18ff"
 intro:
   - excerpt: "Evidence-based breathwork. Titrate intensity, build resilience, improve recovery."
 feature_row:
@@ -43,4 +44,4 @@ clear opt‑outs and intensity options.
 I keep claims modest and name the quality of evidence. If a practice is new or
 the literature is mixed, I’ll say so and adjust the intensity to fit you.
 
-{% include feature_row %}
+{% include feature_row type="center" %}

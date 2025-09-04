@@ -195,3 +195,8 @@ html[data-theme="dark"]  .footer-nav a { color: #e9edf5; }
   .theme-toggle .toggle__spark--2 { width: 2px; height: 2px; right: 16px; top: 11px; }
   .theme-toggle input[type="checkbox"][role="switch"]:checked + .theme-toggle__switch::after { transform: translateX(21px); }
 }
+
+/* Center zen buttons on home feature row */
+.home-zen-center .feature__wrapper .archive__item-title { text-align: center; }
+.home-zen-center .feature__wrapper .archive__item-body p { text-align: center; }
+.home-zen-center .feature__wrapper .btn.zen-button { margin-left: auto; margin-right: auto; }
