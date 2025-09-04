@@ -36,7 +36,7 @@ Below is a selection of key references that inform how we shine a light on breat
 
 8. Almahayni O, Hammond L. [Does the Wim Hof Method have a beneficial impact on physiological and psychological outcomes in healthy and non-healthy participants? A systematic review (2024)](https://pubmed.ncbi.nlm.nih.gov/38478473/). PMID: 38478473.
 
-9. Santino TA, et al. [Breathing exercises for adults with asthma (Review) (2020)](https://pubmed.ncbi.nlm.nih.gov/32212422/). PMID: 32212422.
+9. Santino TA, et al. [Breathing exercises for adults with asthma (2020)](https://pubmed.ncbi.nlm.nih.gov/32212422/). PMID: 32212422.
 
 10. Garg P, et al. [Effect of breathing exercises on blood pressure and heart rate: A systematic review and meta-analysis (2023)](https://pubmed.ncbi.nlm.nih.gov/38179185/). PMID: 38179185.
 
