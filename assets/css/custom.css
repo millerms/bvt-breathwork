@@ -185,3 +185,13 @@ html[data-theme="dark"]  .theme-toggle__label--dark  { color: #e9edf5; opacity: 
 html[data-theme="light"] .footer-nav a { color: #1f2b44; }
 html[data-theme="dark"]  .footer-nav a { color: #e9edf5; }
 .footer-nav .sep { opacity: .55; margin: 0 0.6ch; }
+
+/* Responsive: make theme toggle ~30% smaller on mobile */
+@media (max-width: 480px) {
+  .theme-toggle { gap: .5rem; }
+  .theme-toggle .theme-toggle__switch { --t-w: 45px; --t-h: 24px; }
+  .theme-toggle .theme-toggle__switch::after { width: 20px; height: 20px; top: 2px; left: 2px; }
+  .theme-toggle .toggle__spark--1 { width: 4px; height: 4px; right: 9px; top: 6px; }
+  .theme-toggle .toggle__spark--2 { width: 2px; height: 2px; right: 16px; top: 11px; }
+  .theme-toggle input[type="checkbox"][role="switch"]:checked + .theme-toggle__switch::after { transform: translateX(21px); }
+}
