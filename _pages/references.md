@@ -17,7 +17,7 @@ The references below highlight a growing body of evidence supporting breathwork 
 Studies also show links between breathwork, heart rate variability (HRV), cognitive function, and cardiovascular health. For people with asthma, certain techniques—like Buteyko—can be a helpful part of symptom management. Newer methods, such as the Wim Hof and A52 Breath Methods, are emerging with promising but still developing evidence for both psychological and physiological well-being. 
 
 As always, the science is evolving, and a gentle, informed approach is encouraged.
-
+---
 1. Bentley TGK, et al. [Breathing Practices for Stress and Anxiety Reduction: Conceptual Framework of Implementation Guidelines Based on a Systematic Review (2023)](https://pubmed.ncbi.nlm.nih.gov/38137060/). PMID: 38137060.
 - This review offers practical guidelines showing how breathing techniques can effectively reduce stress and anxiety.
 
