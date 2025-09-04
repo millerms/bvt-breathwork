@@ -5,8 +5,7 @@
   (function () {
     try {
       var stored = localStorage.getItem('theme');
-      // Default to light on first load; only use stored preference if present
-      var theme = stored || 'light';
+      var theme = stored || 'dark';
 
       var head = document.head;
       var light = document.querySelector('link[rel="stylesheet"][href$="/assets/css/main.css"]');
