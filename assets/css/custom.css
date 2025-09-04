@@ -150,8 +150,8 @@ html[data-theme="light"] .btn.zen-button:focus-visible {
 html[data-theme="dark"] .page__hero--overlay { background-color: #121937bc !important; }
 
 /* Fancy theme toggle (Light | switch | Dark) */
-.theme-toggle { display: inline-flex; align-items: center; gap: .75rem; }
-.theme-toggle__label { font-weight: 700; letter-spacing: .01em; }
+.theme-toggle { display: inline-flex; align-items: center; gap: .75rem; padding-block: 2px; margin-block: 2px; }
+.theme-toggle__label { font-weight: 700; letter-spacing: .01em; display: inline-flex; align-items: center; line-height: 1; transform: translateY(-1px); }
 html[data-theme="light"] .theme-toggle__label--light { color: #1f2b44; opacity: 1; }
 html[data-theme="light"] .theme-toggle__label--dark  { color: #b8c2d3; opacity: .9; font-weight: 600; }
 html[data-theme="dark"]  .theme-toggle__label--light { color: #b8c2d3; opacity: .9; font-weight: 600; }
@@ -208,6 +208,9 @@ html[data-theme="dark"]  .footer-nav a { color: #e9edf5; }
 
   /* Footer nav: reduce link font size by ~2px on mobile */
   .footer-nav a { font-size: calc(1em - 2px); }
+
+  /* Theme labels: reduce by ~3px on mobile */
+  .theme-toggle__label { font-size: calc(1em - 3px); transform: translateY(-2px); }
 }
 
 /* Center zen buttons on home feature row */
