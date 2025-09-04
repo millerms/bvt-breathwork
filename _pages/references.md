@@ -42,7 +42,7 @@ Below is a selection of key references that inform how we shine a light on breat
 
 11. Hassan EEM, et al. [Effect of the Buteyko breathing technique on asthma severity control among school-age children (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9308119/). PMID: 9308119.
 
-12. Little AL. [The A52 Breath Method: A Narrative Review of Breathwork for Mental Health and Stress Resilience (2025)](https://pubmed.ncbi.nlm.nih.gov/40792649/). *Stress and Health*. 2025;41(4):e70098. doi:10.1002/smi.70098. PMID: 40792649.
+12. Little AL. [The A52 Breath Method: A Narrative Review of Breathwork for Mental Health and Stress Resilience (2025)](https://pubmed.ncbi.nlm.nih.gov/40792649/). PMID: 40792649.
 
 ## Notes
 
