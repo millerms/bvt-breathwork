@@ -3,6 +3,9 @@ title: "Bio"
 permalink: /bio/
 description: "Jason Fitzgerald. Exercise physiologist and breathwork instructor."
 layout: splash
+tagline: "Exercise physiologist. Breathwork instructor. Evidence‑aware."
+header:
+  overlay_color: "#0b1526"
 ---
 
 Jason Fitzgerald is an exercise physiologist and breathwork instructor who’s trained with Oxygen Advantage and Nordic Flow. He holds certifications in FMS, NFPT CPT, and as a Nordic Flow cold plunge instructor.

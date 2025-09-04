@@ -3,6 +3,9 @@ title: "Breathwork for performance and calm"
 permalink: /
 layout: splash
 description: "Evidence-based breathwork. Titrate intensity. Build resilience."
+tagline: "Practical, trauma‑informed coaching rooted in research."
+header:
+  overlay_color: "#0b1526"
 intro:
   - excerpt: "Evidence-based breathwork. Titrate intensity, build resilience, improve recovery."
 feature_row:
@@ -20,6 +23,11 @@ feature_row:
     excerpt: "Workshops and classes for performance and calm. Options for beginners and experienced practitioners. Clear expectations and recovery between blocks."
     url: "/events/"
     btn_label: "View upcoming events"
+    btn_class: "zen-button"
+  - title: "References"
+    excerpt: "Explore selected research and sources that guide our practice, offering transparency about the evidence behind our methods."
+    url: "/references/"
+    btn_label: "View references"
     btn_class: "zen-button"
   - title: "Contact"
     excerpt: "Questions, private sessions, or team workshops. Agency‑first, trauma‑informed coaching. Typical response time: a few business days."

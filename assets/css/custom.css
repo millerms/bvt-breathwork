@@ -50,14 +50,7 @@
 /* Elevated card variant */
 .glass.card { padding: clamp(14px, 2vw, 22px); border-radius: var(--r-lg); }
 
-/* Optional: make Minimal Mistakes masthead glassy */
-.masthead, .masthead__inner-wrap, .site-header, .greedy-nav, .greedy-nav .hidden-links {
-  -webkit-backdrop-filter: blur(4px) saturate(120%);
-  backdrop-filter: blur(4px) saturate(120%);
-  background-color: hsla(221, 66%, 24%, 0.12) !important;
-  border-bottom: 1px solid hsl(216 85% 13% / .28);
-  box-shadow: 0 8px 26px rgba(0,0,0,.28);
-}
+/* (Phase 1) Default masthead — glass effect removed intentionally */
 
 /* CSS: Reveal Animations */
 /* Base reveal + state */
