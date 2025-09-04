@@ -6,16 +6,13 @@ toc: true
 layout: splash
 ---
 
-This practice blends simple, coachable breathing skills with a clear emphasis on
-agency and safety. We keep claims modest, note evidence quality, and invite you
-to opt out or slow down at any point.
+This practice brings together simple, easy-to-learn breathing skills with a strong focus on your comfort and control. We keep our claims realistic, share what the research says, and always encourage you to listen to your body—slow down or take a break whenever you need.
 
 ## Pillars
 
 ### Nasal‑dominant and slow‑paced breathing (~6 breaths/min)
-- Why: Support calm, improve autonomic balance, and train efficient mechanics.
-- How: Gentle diaphragmatic breathing through the nose. Often at a comfortable
-  pace near 6 breaths per minute.
+- Why: To help you feel calm, balance your nervous system, and breathe more efficiently.
+- How: Gentle breathing through your nose, often at a relaxed pace close to 6 breaths per minute.
 
 > Evidence notes: Multiple RCTs and systematic reviews suggest slow breathing
 > improves HRV and baroreflex function and reduces state anxiety. See
@@ -23,9 +20,8 @@ to opt out or slow down at any point.
 > 6, 10).
 
 ### CO₂ tolerance work (Buteyko‑inspired)
-- Why: Build comfort with mild CO₂ increases to reduce over‑breathing and
-  improve control.
-- How: Light‑to‑moderate nasal breathing with short, comfortable breath holds.
+- Why: To get comfortable with mild rises in CO₂, which can help reduce over‑breathing and give you more control.
+- How: Light to moderate nasal breathing paired with short, easy breath holds.
 
 > Evidence notes: Mixed‑to‑moderate evidence depending on outcome. Some positive
 > data in asthma cohorts. For healthy adults, findings vary and protocols differ
@@ -33,9 +29,8 @@ to opt out or slow down at any point.
 > 11).
 
 ### Controlled cyclic breathing with breath holds
-- Why: Train arousal regulation and recovery. Useful for focus and resilience.
-- How: High‑ventilation protocols with post‑exhale holds are taught with clear
-  safety boundaries and opt‑outs. We avoid branding and use neutral terms.
+- Why: To support managing your energy and recovery, which can boost focus and resilience.
+- How: Breathing patterns with deeper breaths and holds after exhaling, all taught with clear safety guidelines and options to pause. We keep things simple and neutral, avoiding any hype.
 
 > Evidence notes: A 1‑month RCT suggests cyclic sighing with prolonged exhalation
 > improves mood and lowers respiratory rate vs other practices. Broader physio
@@ -43,26 +38,21 @@ to opt out or slow down at any point.
 > 8). Avoid over‑generalizing beyond measured endpoints.
 
 ### IHHT‑style concepts (intermittent hypoxia/hypercapnia)
-- Why: Carefully dosed exposure may train tolerance and awareness. Taught only
-  in conservative, entry‑level formats.
-- How: Short, coached holds with long recovery breathing. Emphasis on comfort,
-  clarity, and screening.
+- Why: Carefully guided exposure may help build tolerance and awareness. We only teach this gently, at an introductory level.
+- How: Short, coached breath holds with plenty of gentle recovery breathing. Comfort, clarity, and screening are top priorities.
 
 > Evidence notes: Emerging and heterogeneous. Use cautious language. More
 > high‑quality trials are needed to define benefits and risks in healthy adults
 > and specific populations. See docs/research.md for scope and limitations.
 
 ## Safety and trauma‑informed choices
-- Agency: You choose pace, intensity, and position (seated or lying).
-- Titration: We start light. Intensity increases only if it feels okay.
-- Opt‑outs: You can pause or switch to gentle nasal breathing at any time.
-- Stop if: You feel dizzy, distressed, or unwell. Return to easy nasal
-  breathing and rest.
-- Considerations: Cardiovascular or pulmonary disease, pregnancy, seizure
-  history, or any medical concerns warrant extra caution and clinical guidance.
+- Your choice: You decide the pace, how intense it feels, and whether you sit or lie down.
+- Start easy: We begin gently and only increase intensity if it feels right for you.
+- Take breaks anytime: You’re welcome to pause or switch to easy nasal breathing whenever you want.
+- Stop if needed: If you feel dizzy, uncomfortable, or unwell, just return to easy breathing and rest.
+- Keep in mind: If you have heart or lung conditions, are pregnant, have a history of seizures, or other health concerns, please take extra care and seek medical advice.
 
 ## What a session feels like
-- Brief check‑in. Gentle nasal breathing. Then skills matched to goals.
-- Short blocks of practice with full recovery between blocks.
-- Clear wrap‑up and take‑home options.
-
+- A quick check-in to start. Gentle nasal breathing to settle in. Then we move into skills that fit your goals.
+- Short practice segments with plenty of time to rest and recover between.
+- A clear wrap-up with options to take what you’ve learned home with you.

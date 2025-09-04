@@ -5,10 +5,9 @@ description: "Get in touch about sessions, workshops, or questions."
 layout: splash
 ---
 
-Reach out with questions or to plan a session.
+We’d love to hear from you! Whether you have questions, want to book a private session, or are interested in workshops, feel free to reach out.
 
-- Email: [hello@example.com](mailto:hello@example.com)
+- Email: [hello@example.com](mailto:hello@example.com)  
 - Instagram: [@bvtbreathwork](https://www.instagram.com/bvtbreathwork/)
 
-Response time: within a few business days.
-
+We usually respond within a few days and look forward to connecting with you.

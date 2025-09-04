@@ -40,7 +40,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://www.instagram.com/bvtbreathwork/"
 
 # Custom scripts loaded in footer
 footer_scripts:
@@ -99,6 +99,7 @@ defaults:
       classes: wide
       share: false
       comments: false
+      css: "custom"
   
 # Markdown Processing
 markdown: kramdown
