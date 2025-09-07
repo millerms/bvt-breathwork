@@ -47,31 +47,36 @@
 /* Hidden links panel as frosted dropdown when visible */
 .masthead .greedy-nav { position: relative; }
 .masthead .greedy-nav .hidden-links {
-  background: hsl(var(--glass-tint-hsl-submenu) / .8) !important;
+  /* Theme-responsive solid surface for readability */
+  background: var(--menu-panel-bg, var(--c-surface)) !important;
   box-shadow: none;
-  border: 0;
+  border: 1px solid var(--c-border);
   border-radius: var(--r-md);
 }
 .masthead .greedy-nav .hidden-links:not(.hidden) {
   position: absolute; top: calc(100% + 8px); right: .75rem; display: flex; flex-direction: column;
   gap: .25rem; padding: .5rem; border-radius: var(--r-md);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  backdrop-filter: blur(16px) saturate(180%);
-  background-color: hsl(var(--glass-tint-hsl-submenu) / .8) !important;
-  border: 1px solid hsl(var(--glass-tint-hsl-submenu) / .60);
-  box-shadow: 0 12px 32px rgba(0,0,0,.40);
+  -webkit-backdrop-filter: none; /* remove frosted effect to keep text crisp */
+  backdrop-filter: none;
+  background-color: var(--menu-panel-bg, var(--c-surface)) !important;
+  border: 1px solid var(--c-border);
+  box-shadow: 0 12px 32px rgba(0,0,0,.20);
 }
+
+/* Hidden-links caret colors to match panel */
+.masthead .greedy-nav .hidden-links::before { border-color: var(--c-border) transparent !important; }
+.masthead .greedy-nav .hidden-links::after  { border-color: var(--menu-panel-bg, var(--c-surface)) transparent !important; }
 
 .masthead .greedy-nav .hidden-links a:hover,
 .masthead .greedy-nav .hidden-links a:focus {
-  background: color-mix(in srgb, var(--glass-tint-hsl-submenu) 35%, transparent);
+  background: color-mix(in srgb, var(--c-link) 10%, transparent);
   text-decoration: none;
   box-shadow: none;
 }
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   .masthead .greedy-nav .hidden-links {
-    background-color: var(--c-surface) !important;
+    background-color: var(--menu-panel-bg, var(--c-surface)) !important;
     box-shadow: 0 12px 28px rgba(0,0,0,.25);
   }
 }
@@ -99,3 +104,10 @@
   -webkit-text-stroke: 0.3px rgba(0,0,0,.55);
 }
 
+/* Ensure hidden menu link colors are readable against panel */
+.masthead .greedy-nav .hidden-links a { color: var(--c-text) !important; }
+.masthead .greedy-nav .hidden-links a:hover { color: var(--c-link-hover) !important; }
+
+/* Remove global screen overlay when hamburger is open */
+.greedy-nav__toggle::before { background-color: transparent !important; }
+.greedy-nav__toggle.close::before { opacity: 0 !important; pointer-events: none !important; }

@@ -7,30 +7,30 @@ priority = "high"
 # Active Context
 
 ## Current Focus
-- Initialize Memory Bank and point Codex config to repo-local guidance.
-- Verify head/footer/scripts includes align with SEO and a11y patterns.
-- Ensure dark theme styles load correctly and maintain contrast.
+- Align site with modular design system (buttons, cards, accordion, tabs).
+- Stabilize events listing and fix Liquid filters and collection wiring.
+- Standardize references component behavior and links (PubMed/PMC).
 
 ## Recent Changes
-- Added Memory Bank core files under `.codex/memory-bank/`.
-- Planning to reference repo-local `memory-bank.md` guidance in `.codex/config.toml`.
-- Removed unused `assets/css/skin-dark.scss` (not referenced in head or config).
-- Chose single CSS include source: keep global `<link>`s in `_includes/head.html`.
-  Removed `css: "custom"` from `_config.yml` defaults (pages/posts) to avoid
-  duplicate `custom.css` loads.
-- Refactored `assets/css/custom.css` into `assets/css/custom.scss` with modular
-  partials in `_sass/custom/` (`_tokens.scss`, `_glass.scss`, `_masthead.scss`,
-  `_reveal.scss`, `_ripple.scss`, `_theme-toggle.scss`, `_footer.scss`). Output
-  path remains `/assets/css/custom.css`.
-- Added rich UI modules (buttons, cards, accordion, tabs, tooltips, CTA, chips,
-  alerts, progress, skeleton, modal), PubMed refs + inline citations, and docs
-  pages under `/docs/*`. Created `.codex/agents/template-docs-agent.md`.
+- Home: migrated `feature_row` buttons to `.btn-modern`; removed legacy classes.
+- SEO: added `seo: true` to public pages; confirmed head meta inclusion.
+- Nav: added `aria-label` to primary nav; support `rel`; filtered footer nav
+  using `footer: false` in `_data/navigation.yml` and removed Instagram from
+  footer follow icons.
+- Events: declared `events` collection in `_config.yml`; fixed Liquid errors by
+  splitting `where_exp` filters; guarded `site.events` nil case.
+- Build: corrected `minimal_mistakes_skin` and Gemfile (use `github-pages`; add
+  `webrick`); recommend Ruby ≥ 3.1 for local parity.
+- References: rebuilt include + JS
+  - Prefer explicit `url`; PubMed URL only for digits-only `pmid`.
+  - Removed Copy and Back links; hide DOI by default.
+  - Added booleans `show_pmid`/`show_doi` (site defaults; per-include override).
+  - Badge renders only when enabled and valid PMID; no empty badges.
 
 ## Next Steps
-- Audit `_includes/head.html` meta tags for completeness (title, description, OG/Twitter, canonical).
-- Confirm `_data/navigation.yml` reflects desired IA; check ARIA labeling.
-- Review `assets/js/reveal.js` and `assets/js/tactile.js` for defer/async and a11y.
-- Run Lighthouse a11y and note follow-ups into `progress.md`.
+- Optional: add `.chips` filters on Events; sample tag taxonomy.
+- Add a short DEV.md with Ruby 3.1+ setup and common commands.
+- Run Lighthouse and record issues in `progress.md`.
 
 ## Decisions & Preferences
 - Keep overrides minimal; prefer theme-supported hooks.

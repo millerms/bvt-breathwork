@@ -1,8 +1,10 @@
 // PubMed references: batch-fetch metadata for elements with data-pubmed-id
 (function(){
   function collectPmids() {
-    const nodes = Array.from(document.querySelectorAll('[data-pubmed-id]'));
-    const ids = Array.from(new Set(nodes.map(n => (n.getAttribute('data-pubmed-id')||'').trim()).filter(Boolean)));
+    const all = Array.from(document.querySelectorAll('[data-pubmed-id]'));
+    // Only accept digits-only PMIDs to avoid accidental bad values
+    const nodes = all.filter(n => /^\d+$/.test((n.getAttribute('data-pubmed-id') || '').trim()));
+    const ids = Array.from(new Set(nodes.map(n => n.getAttribute('data-pubmed-id').trim())));
     return { nodes, ids };
   }
   function parseSummaryJSON(json) {
@@ -13,7 +15,8 @@
       const it = res[id];
       if (!it) return;
       const doi = (it.articleids || []).find(a => a.idtype === 'doi');
-      const url = doi ? 'https://doi.org/' + doi.value : ('https://pubmed.ncbi.nlm.nih.gov/' + id + '/');
+      // Always prefer PubMed URL for link targets
+      const url = 'https://pubmed.ncbi.nlm.nih.gov/' + id + '/';
       const authors = (it.authors || []).map(a => a.name).filter(Boolean);
       const pubdate = it.pubdate || it.epubdate || '';
       const yearMatch = pubdate.match(/\b(19|20)\d{2}\b/);
@@ -43,7 +46,10 @@
     }
     const linkEl = el.querySelector('.ref-link');
     if (linkEl) {
-      linkEl.href = meta.url;
+      // Always prefer PubMed URL we constructed earlier
+      if (meta.url && /^https:\/\/pubmed\.ncbi\.nlm\.nih\.gov\//.test(meta.url)) {
+        linkEl.href = meta.url;
+      }
     }
     const authorsEl = el.querySelector('.ref-authors');
     if (authorsEl && meta.authors && meta.authors.length) {

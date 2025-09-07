@@ -5,6 +5,7 @@
   /* Solarized Light */
   --c-bg: #fdf6e3;          /* base3 */
   --c-surface: #f5efdb;     /* base2+ */
+  --c-surface-footer: #e7dbbc;     /* base2+ */
   --c-text: #072942;        /* base02 */
   --c-muted: #93a1a1;       /* base1 */
   --c-link: #197828;        /* green */
@@ -16,7 +17,9 @@
   --c-accent: #2aa198;      /* cyan */
   /* Page header overlay (Light) */
   --page-hero-overlay: rgba(7, 63, 24, 0.9);
-  /* Menu dropdown glass (Light) */
+  /* Menu dropdown panel background (Light) */
+  --menu-panel-bg: var(--c-surface);
+  /* Legacy: glass tint var (unused by panel) */
   --menu-glass-bg: rgba(7, 63, 24, 0.22);
 }
 
@@ -24,6 +27,7 @@
   :root:not([data-theme]) {
     --c-bg: #0b1f26;
     --c-surface: #0f2730;
+    --c-surface-footer: #081c2a; 
     --c-text: #cdd7dd;
     --c-muted: #8aa1a9;
     --c-link: #2d81e2;
@@ -35,7 +39,9 @@
     --c-accent: #2aa198;
     /* Page header overlay when following system dark */
     --page-hero-overlay: rgba(12, 54, 92, 0.9);
-    /* Menu dropdown glass (System Dark) */
+    /* Menu dropdown panel background (System Dark) */
+    --menu-panel-bg: var(--c-surface);
+    /* Legacy glass tint */
     --menu-glass-bg: rgba(12, 54, 92, 0.22);
   }
 }
@@ -44,6 +50,7 @@
   /* Solarized Dark, slightly darker */
   --c-bg: #0b1f26;          /* darker than base03 */
   --c-surface: #0f2730;     /* deep teal-blue */
+  --c-surface-footer: #081c2a; 
   --c-text: #cdd7dd;        /* soft light */
   --c-muted: #8aa1a9;       /* muted */
   --c-link: #2d81e2;        /* bright blue */
@@ -55,7 +62,9 @@
   --c-accent: #2aa198;      /* cyan */
   /* Page header overlay (Dark) */
   --page-hero-overlay: rgba(12, 54, 92, 0.9);
-  /* Menu dropdown glass (Dark) */
+  /* Menu dropdown panel background (Dark) */
+  --menu-panel-bg: var(--c-surface);
+  /* Legacy glass tint */
   --menu-glass-bg: rgba(12, 54, 92, 0.22);
 }
 
@@ -76,7 +85,7 @@ a:hover { color: var(--c-link-hover); }
 .page__hero--overlay { background-color: var(--page-hero-overlay) !important; }
 
 .page__footer {
-  background-color: var(--c-surface) !important;
+  background-color: var(--c-surface-footer) !important;
   color: var(--c-muted);
 }
 .page__footer a,

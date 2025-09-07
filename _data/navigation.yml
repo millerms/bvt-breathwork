@@ -1,19 +1,18 @@
-# main links
 main:
   - title: "Home"
     url: /
-  - title: "Temp"
-    url: /temp/
-  - title: "Docs"
-    url: /docs/
-    children:
-      - title: "Getting Started"
-        url: /docs/getting-started/
-      - title: "Components"
-        url: /docs/components/
-      - title: "References"
-        url: /docs/references/
-      - title: "Theming"
-        url: /docs/theming/
-      - title: "Advanced"
-        url: /docs/advanced/
+  - title: "Bio"
+    url: /bio/
+  - title: "Approach"
+    url: /approach/
+  - title: "Events"
+    url: /events/
+  - title: "References"
+    url: /references/
+  - title: "Contact"
+    url: /contact/
+  - title: "<i class='fab fa-instagram' aria-hidden='true'></i><span class='visually-hidden'>Instagram</span>"
+    url: https://www.instagram.com/bvtbreathwork/
+    target: _blank
+    rel: noopener
+    footer: false

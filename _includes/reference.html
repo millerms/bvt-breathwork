@@ -6,7 +6,17 @@
 {% assign year = include.year | default: '' %}
 {% assign doi = include.doi | default: '' %}
 {% assign url = include.url | default: '' %}
-{% assign back = include.back | default: '' %}
+{%- comment -%} back-to-text disabled by request {%- endcomment -%}
+{%- comment -%} Normalize booleans; explicit include param overrides site default {%- endcomment -%}
+{% assign show_doi = site.references.show_doi | default: false %}
+{% if include.show_doi != nil %}
+  {% if include.show_doi == true or include.show_doi == 'true' %}{% assign show_doi = true %}{% else %}{% assign show_doi = false %}{% endif %}
+{% endif %}
+
+{% assign show_pmid = site.references.show_pmid | default: true %}
+{% if include.show_pmid != nil %}
+  {% if include.show_pmid == true or include.show_pmid == 'true' %}{% assign show_pmid = true %}{% else %}{% assign show_pmid = false %}{% endif %}
+{% endif %}
 
 {% comment %}
 Usage:
@@ -16,10 +26,39 @@ Optional: title, authors, journal, year, doi, url for static fallback.
 
 {% capture item_id %}ref-{{ pmid | default: title | slugify }}{% endcapture %}
 
-<li class="ref-item" id="{{ item_id }}" {% if pmid %}data-pubmed-id="{{ pmid }}"{% endif %}>
+{%- comment -%}
+Normalize and validate PMID (digits only)
+{%- endcomment -%}
+{% assign _pmid = pmid | strip %}
+{% assign _pmid_lc = _pmid | downcase %}
+{% assign _pmid_digits = _pmid | remove: '0' | remove: '1' | remove: '2' | remove: '3' | remove: '4' | remove: '5' | remove: '6' | remove: '7' | remove: '8' | remove: '9' %}
+{% assign has_valid_pmid = _pmid != '' and _pmid_lc != 'null' and _pmid_digits == '' %}
+
+{%- comment -%}
+Compute final href:
+- If `pmid` exists, always point to PubMed.
+- Else, use provided `url` as-is.
+{%- endcomment -%}
+{%- comment -%} Prefer explicit URL if provided; otherwise use PubMed when PMID is valid {%- endcomment -%}
+{% if url != blank %}
+  {% assign href = url %}
+{% elsif has_valid_pmid %}
+  {% assign href = 'https://pubmed.ncbi.nlm.nih.gov/' | append: _pmid | append: '/' %}
+{% else %}
+  {% assign href = '' %}
+{% endif %}
+
+{%- comment -%}
+Extra safety: only consider badge/JS enhancement when the final href is PubMed
+{%- endcomment -%}
+{% assign is_pubmed_href = href contains 'pubmed.ncbi.nlm.nih.gov' %}
+{% assign show_badge = false %}
+{% if show_pmid and has_valid_pmid and is_pubmed_href %}{% assign show_badge = true %}{% endif %}
+
+<li class="ref-item" id="{{ item_id }}" {% if show_badge %}data-pubmed-id="{{ _pmid }}"{% endif %}>
   <div class="ref-num">{{ num }}</div>
   <div class="ref-main">
-    <a class="ref-link" href="{{ url | default: (pmid | prepend: 'https://pubmed.ncbi.nlm.nih.gov/' | append: '/') }}" target="_blank" rel="noopener">
+    <a class="ref-link" href="{{ href }}" target="_blank" rel="noopener noreferrer">
       <span class="ref-title">{{ title }}</span>
     </a>
     <div class="ref-authors">{{ authors }}</div>
@@ -27,11 +66,13 @@ Optional: title, authors, journal, year, doi, url for static fallback.
       <span class="ref-journal">{{ journal }}</span>
       {% if year %}<span class="ref-meta"> • <span class="ref-year">{{ year }}</span></span>{% endif %}
     </div>
+    {% if show_badge or (show_doi and doi) %}
     <div class="ref-actions">
-      {% if pmid %}<span class="ref-badge ref-badge--pmid" title="PubMed ID">PMID {{ pmid }}</span>{% endif %}
-      <a class="ref-doi ref-link" {% unless doi %}style="display:none"{% endunless %} href="{% if doi %}https://doi.org/{{ doi }}{% endif %}">DOI <span class="ref-doi">{{ doi }}</span></a>
-      <button class="btn-modern btn-modern--sm btn-modern--outline" type="button" data-copy-citation>Copy</button>
-      {% if back %}<a class="ref-link" href="#{{ back }}">Back to text</a>{% endif %}
+      {% if show_badge %}<span class="ref-badge ref-badge--pmid" title="PubMed ID">PMID {{ _pmid }}</span>{% endif %}
+      {% if show_doi and doi %}
+      <a class="ref-doi ref-link" href="https://doi.org/{{ doi }}">DOI <span class="ref-doi">{{ doi }}</span></a>
+      {% endif %}
     </div>
+    {% endif %}
   </div>
 </li>

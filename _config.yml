@@ -1,12 +1,12 @@
 # Theme Settings
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
-minimal_mistakes_skin: ""
+minimal_mistakes_skin: "default"
 
 # Site settings
-title: "Mike's Custom MM Template"
-description: "Temp."
-url: ""
-baseurl: ""
+title: "BVT Breathwork"
+description: "Site for Jason's company, BVT Breathwork"
+url: "https://millerms.github.io"
+baseurl: "/bvt-breathwork"
 locale: en-US
 og_image: 
 logo: 
@@ -40,7 +40,6 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
 
 # Custom scripts loaded in footer
 footer_scripts:
@@ -58,6 +57,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
+# References settings
+references:
+  show_doi: false
+  show_pmid: true
+
 # Navigation
 navigation:
   - title: "Home"
@@ -68,6 +72,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  events:
+    output: true
+    permalink: /events/:title/
 
 # Defaults
 defaults:

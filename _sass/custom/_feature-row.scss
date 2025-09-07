@@ -1,0 +1,21 @@
+/* Center feature row titles and buttons across viewports */
+.feature__item--center,
+.feature__item--center .archive__item,
+.feature__item--center .archive__item-body,
+.feature__item--center .archive__item-title {
+  text-align: center;
+}
+
+/* Ensure the CTA button centers even when wrapped in a paragraph */
+.feature__wrapper .archive__item-body p {
+  text-align: center;
+}
+
+.feature__wrapper .archive__item-body p > a.btn {
+  display: inline-flex;
+  margin-inline: auto;
+}
+
+/* Slight spacing tweak for stacked mobile layout */
+.feature__wrapper .archive__item-body p { margin-top: .5rem; }
+

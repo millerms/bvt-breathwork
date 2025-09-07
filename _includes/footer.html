@@ -1,9 +1,12 @@
 {% if site.data.navigation and site.data.navigation.main %}
-  <div class="page__footer-nav">
-    {% for item in site.data.navigation.main %}
-      <a href="{{ item.url | relative_url }}">{{ item.title | escape_once | strip }}</a>{% unless forloop.last %} <span class="pipe" aria-hidden="true">|</span> {% endunless %}
-    {% endfor %}
-  </div>
+  {% assign footer_nav = site.data.navigation.main | where_exp: "i", "i.footer != false" %}
+  {% if footer_nav and footer_nav.size > 0 %}
+    <div class="page__footer-nav">
+      {% for item in footer_nav %}
+        <a href="{{ item.url | relative_url }}">{{ item.title | escape_once | strip }}</a>{% unless forloop.last %} <span class="pipe" aria-hidden="true">|</span> {% endunless %}
+      {% endfor %}
+    </div>
+  {% endif %}
 {% endif %}
 
 {% unless site.atom_feed.hide %}

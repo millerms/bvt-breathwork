@@ -8,21 +8,25 @@ priority = "medium"
 
 ## What Works
 - Minimal Mistakes theme configured; site structure in place.
-- Custom assets exist (`theme.css`, `custom.css`, `reveal.js`, `tactile.js`).
+- Modular SCSS components active; `.btn-modern` in use.
+- Primary nav a11y improved; footer nav filters external links.
+- Events list renders Upcoming/Past with robust filters.
+- References component: PubMed/PMC links correct; badges only for PubMed.
 
 ## In Progress
-- Memory Bank initialized and linked in config.
-- Meta, SEO, and a11y audit to verify compliance.
-- Documentation pages added; iterate with feedback.
+- Meta, SEO, and a11y audit for completeness.
+- Developer documentation for local setup and troubleshooting.
 
 ## Blockers
-- None identified yet.
+- Local build on Ruby 2.6.x fails due to gem constraints — upgrade Ruby to
+  3.1.x recommended (use rbenv/asdf), then `bundle install`.
 
 ## Upcoming
 - Validate dark mode styles across key pages.
 - Ensure JS loads non-blocking and remains accessible.
-- Expand docs with troubleshooting and deployment notes if needed.
+- Add Events tag filters with `.chips` (optional).
 
 ## Known Issues
-- Resolved duplicate `custom.css` inclusion by removing `css: "custom"` from
-  `_config.yml` defaults. Global include in `_includes/head.html` is authoritative.
+- Resolved duplicate `custom.css` inclusion (no default page-level css).
+- Fixed Liquid parsing errors on events by splitting `where_exp` conditions.
+- Fixed reference links and removed empty PMID badges.
