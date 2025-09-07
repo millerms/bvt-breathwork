@@ -1,0 +1,101 @@
+/* Optional: make Minimal Mistakes masthead glassy (single overlay) */
+/* Keep outer containers transparent to avoid stacked tints */
+.masthead, .site-header, .greedy-nav, .greedy-nav .hidden-links {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+/* Inner wrap stays transparent; blur/tint live on .masthead */
+.masthead__inner-wrap {
+  padding-left: .75rem;
+  padding-right: .75rem;
+  background: transparent !important;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  box-shadow: none;
+  border: 0;
+}
+
+/* Remove underline/box effects from greedy containers */
+.masthead .masthead__menu,
+.masthead .greedy-nav {
+  background: transparent !important;
+  box-shadow: none;
+  border: 0;
+}
+
+/* Bolder masthead and dropdown links for readability */
+.masthead .greedy-nav a { font-weight: 700; letter-spacing: .01em; }
+.masthead .greedy-nav .hidden-links a { font-weight: 700; }
+.masthead .site-title,
+.masthead .site-title a { font-weight: 800; }
+
+/* Sticky masthead with glass following on scroll */
+.masthead {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* above content so blur overlays text */
+  -webkit-backdrop-filter: blur(8px) saturate(120%);
+  backdrop-filter: blur(8px) saturate(120%);
+  background-color: var(--header-glass-bg) !important; /* theme-aware */
+  border-bottom: 1px solid var(--glass-border);
+  box-shadow: 0 8px 26px rgba(0,0,0,.22);
+}
+
+/* Frosted hamburger dropdown (Greedy Nav hidden links) */
+/* Hidden links panel as frosted dropdown when visible */
+.masthead .greedy-nav { position: relative; }
+.masthead .greedy-nav .hidden-links {
+  background: hsl(var(--glass-tint-hsl-submenu) / .8) !important;
+  box-shadow: none;
+  border: 0;
+  border-radius: var(--r-md);
+}
+.masthead .greedy-nav .hidden-links:not(.hidden) {
+  position: absolute; top: calc(100% + 8px); right: .75rem; display: flex; flex-direction: column;
+  gap: .25rem; padding: .5rem; border-radius: var(--r-md);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: hsl(var(--glass-tint-hsl-submenu) / .8) !important;
+  border: 1px solid hsl(var(--glass-tint-hsl-submenu) / .60);
+  box-shadow: 0 12px 32px rgba(0,0,0,.40);
+}
+
+.masthead .greedy-nav .hidden-links a:hover,
+.masthead .greedy-nav .hidden-links a:focus {
+  background: color-mix(in srgb, var(--glass-tint-hsl-submenu) 35%, transparent);
+  text-decoration: none;
+  box-shadow: none;
+}
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .masthead .greedy-nav .hidden-links {
+    background-color: var(--c-surface) !important;
+    box-shadow: 0 12px 28px rgba(0,0,0,.25);
+  }
+}
+
+/* Subtle halo to improve link legibility over scrolled content */
+.greedy-nav a,
+.site-title,
+.site-title a {
+  text-shadow: 0 1px 1px rgba(0,0,0,.25), 0 0 1px rgba(0,0,0,.22);
+  /* Ensure no stroke in light theme */
+  -webkit-text-stroke: 0;
+}
+
+[data-theme='dark'] .greedy-nav a,
+[data-theme='dark'] .site-title,
+[data-theme='dark'] .site-title a {
+  text-shadow: 0 1px 1px rgba(0,0,0,.4), 0 0 1px rgba(0,0,0,.35);
+}
+
+/* Thin stroke around masthead and dropdown links (dark theme) */
+[data-theme='dark'] .masthead .greedy-nav a,
+[data-theme='dark'] .masthead .greedy-nav .hidden-links a,
+[data-theme='dark'] .masthead .site-title,
+[data-theme='dark'] .masthead .site-title a {
+  -webkit-text-stroke: 0.3px rgba(0,0,0,.55);
+}
+

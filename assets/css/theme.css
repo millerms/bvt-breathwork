@@ -1,0 +1,128 @@
+/* Theme palettes: Solarized Light and Dark (darker) */
+
+:root,
+:root[data-theme='light'] {
+  /* Solarized Light */
+  --c-bg: #fdf6e3;          /* base3 */
+  --c-surface: #f5efdb;     /* base2+ */
+  --c-text: #072942;        /* base02 */
+  --c-muted: #93a1a1;       /* base1 */
+  --c-link: #197828;        /* green */
+  --c-link-hover: #17a72d;  /* green (hover) */
+  --c-link-visited: #7fb386;/* lighter green */
+  --c-border: rgba(7, 54, 66, 0.18);
+  --c-code-bg: #f3ead2;
+  --c-code-text: #586e75;   /* base01 */
+  --c-accent: #2aa198;      /* cyan */
+  /* Page header overlay (Light) */
+  --page-hero-overlay: rgba(7, 63, 24, 0.9);
+  /* Menu dropdown glass (Light) */
+  --menu-glass-bg: rgba(7, 63, 24, 0.22);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --c-bg: #0b1f26;
+    --c-surface: #0f2730;
+    --c-text: #cdd7dd;
+    --c-muted: #8aa1a9;
+    --c-link: #2d81e2;
+    --c-link-hover: rgb(90, 172, 253);
+    --c-link-visited: #a3a7ff;
+    --c-border: rgba(255, 255, 255, 0.08);
+    --c-code-bg: #06212a;
+    --c-code-text: #bfe0ea;
+    --c-accent: #2aa198;
+    /* Page header overlay when following system dark */
+    --page-hero-overlay: rgba(12, 54, 92, 0.9);
+    /* Menu dropdown glass (System Dark) */
+    --menu-glass-bg: rgba(12, 54, 92, 0.22);
+  }
+}
+
+:root[data-theme='dark'] {
+  /* Solarized Dark, slightly darker */
+  --c-bg: #0b1f26;          /* darker than base03 */
+  --c-surface: #0f2730;     /* deep teal-blue */
+  --c-text: #cdd7dd;        /* soft light */
+  --c-muted: #8aa1a9;       /* muted */
+  --c-link: #2d81e2;        /* bright blue */
+  --c-link-hover: rgb(90, 172, 253);  /* hover */
+  --c-link-visited: #a3a7ff;/* violet-ish */
+  --c-border: rgba(255, 255, 255, 0.08);
+  --c-code-bg: #06212a;     /* panel for code */
+  --c-code-text: #bfe0ea;   /* code fg */
+  --c-accent: #2aa198;      /* cyan */
+  /* Page header overlay (Dark) */
+  --page-hero-overlay: rgba(12, 54, 92, 0.9);
+  /* Menu dropdown glass (Dark) */
+  --menu-glass-bg: rgba(12, 54, 92, 0.22);
+}
+
+/* Apply to major surfaces and text */
+html, body {
+  background-color: var(--c-bg);
+  color: var(--c-text);
+}
+
+a { color: var(--c-link); }
+a:visited { color: var(--c-link-visited); }
+a:hover { color: var(--c-link-hover); }
+
+/* Masthead and footer surfaces */
+/* Masthead colors are handled by custom glass styles. */
+
+/* Force theme-driven overlay for hero headers */
+.page__hero--overlay { background-color: var(--page-hero-overlay) !important; }
+
+.page__footer {
+  background-color: var(--c-surface) !important;
+  color: var(--c-muted);
+}
+.page__footer a,
+.page__footer-follow a,
+.page__footer-nav a { color: var(--c-link) !important; }
+
+.page__footer a:hover,
+.page__footer-follow a:hover,
+.page__footer-nav a:hover { color: var(--c-link-hover) !important; }
+
+.page__footer a:visited,
+.page__footer-follow a:visited,
+.page__footer-nav a:visited { color: var(--c-link-visited) !important; }
+
+/* Force Solarized link colors in masthead navigation */
+.masthead a,
+.greedy-nav a,
+.site-title,
+.greedy-nav .visible-links a,
+.greedy-nav .hidden-links a { color: var(--c-link) !important; }
+
+.masthead a:hover,
+.greedy-nav a:hover,
+.site-title:hover,
+.greedy-nav .hidden-links a:hover { color: var(--c-link-hover) !important; }
+
+/* Underline bar color on hover in main nav */
+.greedy-nav .visible-links a:before { background: var(--c-link) !important; }
+
+/* Content accents */
+hr { border-color: var(--c-border); }
+blockquote { color: var(--c-text); border-inline-start: 4px solid var(--c-border); }
+
+/* Tables */
+.page__content table { border-color: var(--c-border); }
+.page__content th, .page__content td { border-color: var(--c-border); }
+
+/* Code blocks */
+pre, code, samp, kbd, .highlighter-rouge, .highlight {
+  background-color: var(--c-code-bg) !important;
+  color: var(--c-code-text) !important;
+}
+
+/* Cards/notice surfaces (light touch) */
+.notice, .notice--primary, .notice--info,
+.archive__item, .sidebar, .page__content .toc {
+  background-color: var(--c-surface);
+  border-color: var(--c-border);
+}
