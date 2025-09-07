@@ -57,6 +57,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-include-cache
 
+# Theme default: 'system' | 'light' | 'dark'
+theme_default: system
+
 # References settings
 references:
   show_doi: false

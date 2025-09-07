@@ -47,8 +47,9 @@
 /* Hidden links panel as frosted dropdown when visible */
 .masthead .greedy-nav { position: relative; }
 .masthead .greedy-nav .hidden-links {
-  /* Theme-responsive solid surface for readability */
-  background: var(--menu-panel-bg, var(--c-surface)) !important;
+  /* Theme-responsive panel with ~30% transparency */
+  background: var(--menu-panel-bg, var(--c-surface)) !important; /* fallback */
+  background: color-mix(in srgb, var(--menu-panel-bg, var(--c-surface)) 70%, transparent) !important;
   box-shadow: none;
   border: 1px solid var(--c-border);
   border-radius: var(--r-md);
@@ -101,11 +102,12 @@
 [data-theme='dark'] .masthead .greedy-nav .hidden-links a,
 [data-theme='dark'] .masthead .site-title,
 [data-theme='dark'] .masthead .site-title a {
-  -webkit-text-stroke: 0.3px rgba(0,0,0,.55);
+  -webkit-text-stroke: 0.1px rgba(0,0,0,.15);
 }
 
 /* Ensure hidden menu link colors are readable against panel */
-.masthead .greedy-nav .hidden-links a { color: var(--c-text) !important; }
+/* Match masthead link color tokens per theme */
+.masthead .greedy-nav .hidden-links a { color: var(--c-link) !important; }
 .masthead .greedy-nav .hidden-links a:hover { color: var(--c-link-hover) !important; }
 
 /* Remove global screen overlay when hamburger is open */
