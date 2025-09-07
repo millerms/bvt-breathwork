@@ -24,7 +24,6 @@
 }
 
 /* Fallback via JS: data-theme="dark|light" is set before CSS loads */
-
 :root[data-theme='dark'] {
   /* Ocean Dark */
   --c-bg: #0a1b26;
